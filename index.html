@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Dagtaan</title>
+    <!-- Geist Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Temporary font replacement until Geist is loaded */
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+    <script>
+      // Load Geist font using JavaScript
+      (function () {
+        const geistSans = new FontFace(
+          "Geist Sans",
+          "url(https://cdn.jsdelivr.net/npm/geist-font@latest/dist/fonts/geist-sans/Geist-Regular.woff2)"
+        );
+        const geistMono = new FontFace(
+          "Geist Mono",
+          "url(https://cdn.jsdelivr.net/npm/geist-font@latest/dist/fonts/geist-mono/GeistMono-Regular.woff2)"
+        );
+
+        Promise.all([geistSans.load(), geistMono.load()]).then((fonts) => {
+          fonts.forEach((font) => {
+            document.fonts.add(font);
+          });
+          document.documentElement.classList.add("geist-loaded");
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
