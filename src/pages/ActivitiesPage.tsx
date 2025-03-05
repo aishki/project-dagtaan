@@ -24,12 +24,21 @@ import {
   TableRow,
 } from "../components/ui/table";
 import { Clock, MapPin, Calendar } from "lucide-react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function ActivitiesPage() {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
+
+  const { pathname } = useLocation();
+  useEffect(() => {
+    if (pathname === "/activities") {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname]);
 
   const containerVariants = {
     hidden: { opacity: 0 },

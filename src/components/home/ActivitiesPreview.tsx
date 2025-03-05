@@ -12,7 +12,7 @@ function ActivitiesPreview() {
 
   return (
     <section
-      id="activities"
+      id="activities-preview"
       className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 dark:bg-gray-900"
     >
       <div className="container px-4 md:px-6">
@@ -110,7 +110,7 @@ function ActivitiesPreview() {
               </div>
               <div className="p-6 pt-0 mt-auto">
                 <Link
-                  to="/activities"
+                  to="/activities#top"
                   className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2 w-full"
                 >
                   View Day 1 Activities
@@ -194,7 +194,7 @@ function ActivitiesPreview() {
               </div>
               <div className="p-6 pt-0 mt-auto">
                 <Link
-                  to="/activities"
+                  to="/activities#top"
                   className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2 w-full"
                 >
                   View Day 2 Activities
@@ -279,7 +279,7 @@ function ActivitiesPreview() {
               </div>
               <div className="p-6 pt-0 mt-auto">
                 <Link
-                  to="/activities"
+                  to="/activities#top"
                   className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2 w-full"
                 >
                   View Day 3 Activities
@@ -289,7 +289,7 @@ function ActivitiesPreview() {
           </div>
           <div className="text-center">
             <Link
-              to="/activities"
+              to="/activities#top"
               className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-to-r from-[#8E2DE2] to-[#4A00E0] text-white-foreground hover:bg-primary/90 h-10 px-4 py-2"
             >
               View All Activities

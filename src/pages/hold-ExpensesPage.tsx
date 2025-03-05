@@ -1,3 +1,4 @@
+// Functional Expense Page non-responsive.
 "use client";
 
 import { motion } from "framer-motion";
