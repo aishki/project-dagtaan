@@ -200,7 +200,7 @@ function ContactPage() {
   return (
     <section id="contact" className="w-full bg-gray-50 dark:bg-gray-900">
       {/* Get Involved */}
-      <div className=" py-12 md:py-24 lg:py-32 px-24 md:px-6 inset-0 bg-gradient-to-r from-purple-500/10 to-indigo-500/10">
+      <div className=" py-12 md:py-24 lg:py-32 px-8 md:px-6 inset-0 bg-gradient-to-r from-purple-500/10 to-indigo-500/10">
         <motion.div
           ref={ref}
           variants={containerVariants}
@@ -220,7 +220,7 @@ function ContactPage() {
 
           {/* Volunteer Registration Section */}
           <motion.div variants={itemVariants}>
-            <Card className="w-[80%] mx-auto mt-12 overflow-hidden border-0 shadow-lg bg-gradient-to-r from-purple-900/80 to-indigo-900/80">
+            <Card className="w-full lg:w-[80%] mx-auto mt-12 overflow-hidden border-0 shadow-lg bg-gradient-to-r from-purple-900/80 to-indigo-900/80">
               <CardHeader className="relative z-10">
                 <CardTitle className="text-2xl md:text-3xl text-white">
                   Be Part of Our Volunteer Team
