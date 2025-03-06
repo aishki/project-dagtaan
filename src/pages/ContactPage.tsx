@@ -1,5 +1,7 @@
 "use client";
 
+import * as React from "react";
+
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -10,6 +12,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
+  CardFooter,
 } from "../components/ui/card";
 import { Input } from "../components/ui/input";
 import { Label } from "../components/ui/label";
@@ -22,6 +25,10 @@ import {
   AlertCircle,
   CheckCircle,
   X,
+  Calendar,
+  Users,
+  ExternalLink,
+  Heart,
 } from "lucide-react";
 
 function ContactPage() {
@@ -191,11 +198,111 @@ function ContactPage() {
   };
 
   return (
-    <section
-      id="contact"
-      className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 dark:bg-gray-900"
-    >
-      <div className="container px-4 md:px-6">
+    <section id="contact" className="w-full bg-gray-50 dark:bg-gray-900">
+      {/* Get Involved */}
+      <div className=" py-12 md:py-24 lg:py-32 px-24 md:px-6 inset-0 bg-gradient-to-r from-purple-500/10 to-indigo-500/10">
+        <motion.div
+          ref={ref}
+          variants={containerVariants}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <motion.div variants={itemVariants} className="text-center space-y-4">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              Get Involved
+            </h1>
+            <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              Join us in making a difference in the lives of children <br />
+              at Kalipay Negrense Foundation.
+            </p>
+          </motion.div>
+
+          {/* Volunteer Registration Section */}
+          <motion.div variants={itemVariants}>
+            <Card className="w-[80%] mx-auto mt-12 overflow-hidden border-0 shadow-lg bg-gradient-to-r from-purple-900/80 to-indigo-900/80">
+              <CardHeader className="relative z-10">
+                <CardTitle className="text-2xl md:text-3xl text-white">
+                  Be Part of Our Volunteer Team
+                </CardTitle>
+                <CardDescription className="text-gray-200">
+                  Help us color the dreams of children by volunteering your time
+                  and skills
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="relative z-10">
+                <div className="grid gap-6 md:grid-cols-2">
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-3">
+                      <Calendar className="h-5 w-5 text-purple-200 mt-0.5 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-medium text-white">
+                          Choose Your Schedule
+                        </h3>
+                        <p className="text-sm text-gray-200">
+                          Select dates that work best for you to volunteer at
+                          Kalipay Negrense Foundation
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Users className="h-5 w-5 text-purple-200 mt-0.5 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-medium text-white">
+                          Define Your Role
+                        </h3>
+                        <p className="text-sm text-gray-200">
+                          Specify your skills and how you'd like to contribute
+                          to our mission
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Heart className="h-5 w-5 text-purple-200 mt-0.5 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-medium text-white">
+                          Make an Impact
+                        </h3>
+                        <p className="text-sm text-gray-200">
+                          Your time and effort will directly help improve the
+                          lives of children in need
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col justify-center space-y-4">
+                    <p className="text-white text-sm md:text-base">
+                      Fill out our volunteer registration form to get started on
+                      your journey with us. We'll match your skills and
+                      availability with our ongoing projects and needs.
+                    </p>
+                    <div className="flex justify-center md:justify-start">
+                      <a
+                        href="https://forms.gle/GjoNu3pLYi3Vkrv1A"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-white text-purple-900 hover:bg-purple-50 px-6 py-3 rounded-md font-medium transition-colors"
+                      >
+                        Register as Volunteer
+                        <ExternalLink className="h-4 w-4" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+              <CardFooter className="relative z-10 border-t border-white/10 bg-black/20 pt-3 pb-3">
+                <p className="text-sm text-gray-300">
+                  For questions about volunteering, please contact us directly
+                  at <span className="text-white">gdg@usls.edu.ph</span>
+                </p>
+              </CardFooter>
+            </Card>
+          </motion.div>
+        </motion.div>
+      </div>
+
+      {/* Card Gforms Info */}
+      <div className="pb-12 md:pb-24 lg:pb-32 container mt-20 px-4 md:px-6">
         <motion.div
           ref={ref}
           variants={containerVariants}
@@ -203,15 +310,6 @@ function ContactPage() {
           animate={inView ? "visible" : "hidden"}
           className="space-y-12"
         >
-          <motion.div variants={itemVariants} className="text-center space-y-4">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Get Involved
-            </h1>
-            <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Join us in making a difference in the lives of children at Kalipay
-              Negrense Foundation.
-            </p>
-          </motion.div>
           <motion.div
             variants={itemVariants}
             className="grid gap-8 md:grid-cols-2"
