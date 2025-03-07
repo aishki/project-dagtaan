@@ -8,3 +8,5 @@
 dist/
 
 echo "tsconfig.buildinfo" >> .gitignore
+
+.vercel
