@@ -6,3 +6,5 @@
 /build/
 # Ignore build output
 dist/
+
+echo "tsconfig.buildinfo" >> .gitignore
