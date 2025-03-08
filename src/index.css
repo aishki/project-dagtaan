@@ -71,14 +71,14 @@
   align-items: center;
   justify-content: center;
   height: 2.75rem;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   border: 0;
   position: relative;
   overflow: hidden;
   border-radius: calc(var(--radius) - 2px);
   transition: all 0.02s;
   font-weight: 500;
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   line-height: 1.25rem;
   cursor: pointer;
   color: var(--accent-foreground);
@@ -120,8 +120,8 @@
   height: 10rem;
   filter: blur(20px);
   opacity: 0.9;
-  animation: effect 3s infinite linear;
-  transition: width 0.7s ease, height 0.7s ease, opacity 1s ease, filter 1s ease;
+  animation: effect 5s infinite linear;
+  transition: width 1s ease, height 1s ease, opacity 1s ease, filter 1s ease;
 }
 
 .gradient-button:hover .gradient-hoverEffect div {
@@ -131,10 +131,10 @@
 }
 
 .gradient-button:not(:hover) .gradient-hoverEffect div {
-  width: 10rem;
-  height: 10rem;
+  width: 45rem;
+  height: 25rem;
   opacity: 0.8;
-  transition: all 1.5s ease;
+  transition: all 2.5s ease;
   transition-delay: 0.3s;
 }
 
@@ -177,5 +177,46 @@
 @media (min-width: 1400px) {
   .container {
     max-width: 1400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gradient-hoverEffect div {
+    background: linear-gradient(90deg,
+        rgb(0, 19, 222) 0%,
+        rgba(191, 70, 255, 1) 43%,
+        rgba(246, 79, 89, 1) 100%);
+    opacity: 0.9;
+    animation: effect 3s infinite linear;
+    transition: width 0.7s ease, height 0.7s ease, opacity 1s ease, filter 1s ease;
+  }
+
+  .gradient-hoverEffect {
+    overflow: visible;
+  }
+}
+
+
+/* Responsive adjustments for the activities page */
+@media (max-width: 600px) {
+  #activities .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  #activities table {
+    font-size: 0.75rem !important;
+  }
+
+  #activities td,
+  #activities th {
+    padding: 0.25rem 0.5rem !important;
+  }
+
+  #activities .card {
+    border-radius: 0 !important;
+    margin-left: -1px !important;
+    margin-right: -1px !important;
+    width: calc(100% + 2px) !important;
   }
 }
