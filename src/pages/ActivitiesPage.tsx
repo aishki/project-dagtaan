@@ -130,38 +130,38 @@ function ActivitiesPage() {
                         <Table className="w-full">
                           <TableHeader>
                             <TableRow>
-                              <TableHead className="w-2/12 p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableHead className="w-2/12 text-xs sm:text-sm">
                                 Time
                               </TableHead>
-                              <TableHead className="w-3/12 p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableHead className="w-3/12 text-xs sm:text-sm">
                                 Activity
                               </TableHead>
                             </TableRow>
                           </TableHeader>
                           <TableBody>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 9:00 AM – 10:30 AM
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Departure from La Salle & Arrival at Kalipay
                                 Negrense Foundation
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 10:30 AM – 12:00 NN
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Ocular Visit & Final Preparations (Venue
                                 assessment, station setup, and briefing)
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 12:00 NN – 1:00 PM
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Lunch Break
                               </TableCell>
                             </TableRow>
@@ -185,74 +185,74 @@ function ActivitiesPage() {
                         <Table className="w-full">
                           <TableHeader>
                             <TableRow>
-                              <TableHead className="w-2/12 p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableHead className="w-2/12 text-xs sm:text-sm">
                                 Station
                               </TableHead>
-                              <TableHead className="w-3/12 p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableHead className="w-3/12 text-xs sm:text-sm">
                                 Activity Description
                               </TableHead>
                             </TableRow>
                           </TableHeader>
                           <TableBody>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 🎨 Paint Craze
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Teams paint pre-designed tote bags within a time
                                 limit.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 🦸 Super Mask Quest
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Kids decorate superhero masks and pose for a
                                 group photo.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 🧱 LEGO Project
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Teams build a LEGO creation based on a given
                                 theme and present it.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 🧩 Puzzle Race
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Teams race to complete jigsaw puzzles with a
                                 mix-and-match twist.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 🔍 Memory Match Mania
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Kids play a memory-matching game under a time
                                 limit.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 🏃‍♂️ Obstacle Madness
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 A fun obstacle course promoting teamwork and
                                 coordination.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 🔊 Guess the Sound
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Kids identify sounds to earn rewards.
                               </TableCell>
                             </TableRow>
@@ -270,57 +270,57 @@ function ActivitiesPage() {
                         <Table className="w-full">
                           <TableHeader>
                             <TableRow>
-                              <TableHead className="w-2/12 p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableHead className="w-2/12 text-xs sm:text-sm">
                                 Role
                               </TableHead>
-                              <TableHead className="w-3/12 p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableHead className="w-3/12 text-xs sm:text-sm">
                                 Responsibilities
                               </TableHead>
                             </TableRow>
                           </TableHeader>
                           <TableBody>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Event Director/ Lead Coordinator
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Oversees event flow, makes real-time
                                 adjustments, ensures all teams are functioning
                                 smoothly
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Program Manager
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Ensures event follows the timeline, assists
                                 emcee, manages transitions
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Emcee/ Host
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Engages participants, introduces segments,
                                 maintains energy
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Team Facilitators
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Guide assigned teams through the race, encourage
                                 participation. One per 5 kids in a group.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Station Masters (Day 1)
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Explain and oversee station tasks, enforce
                                 rules, distribute prizes. Station 1 and Final
                                 Station will be guided by the Team Faci, and
@@ -329,10 +329,10 @@ function ActivitiesPage() {
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Computer Lab Repair Team (Day 1)
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 In collaboration with USLS ITS Office, and at
                                 most 2 volunteers from GDG-USLS, they will be in
                                 charge of setting up the computer lab,
@@ -342,28 +342,28 @@ function ActivitiesPage() {
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Photographers & Documentation
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Capture highlights of activities and
                                 interactions for reports and promotions
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Tech & Sound Team
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Manages microphones, speakers, and sound system.
                                 Will also man the Station 7.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Food & Logistics Team
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Responsible for buying food, running errands,
                                 and assisting the kitchen in preparing snacks
                                 and refreshments. Additionally, handles
@@ -424,29 +424,29 @@ function ActivitiesPage() {
                         <Table className="w-full">
                           <TableHeader>
                             <TableRow>
-                              <TableHead className="w-2/12 p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableHead className="w-2/12 text-xs sm:text-sm">
                                 Time
                               </TableHead>
-                              <TableHead className="w-3/12 p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableHead className="w-3/12 text-xs sm:text-sm">
                                 Activity
                               </TableHead>
                             </TableRow>
                           </TableHeader>
                           <TableBody>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 9:00 AM – 10:30 AM
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Departure from La Salle & Arrival at Kalipay
                                 Negrense Foundation
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 10:30 AM – 12:00 NN
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Station Setup & Venue Preparation <br />
                                 Teams set up activity stations and finalize
                                 materials. <br />
@@ -455,10 +455,10 @@ function ActivitiesPage() {
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 12:00 NN – 1:00 PM
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Lunch Break
                               </TableCell>
                             </TableRow>
@@ -480,75 +480,75 @@ function ActivitiesPage() {
                         <Table className="w-full">
                           <TableHeader>
                             <TableRow>
-                              <TableHead className="w-2/12 p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableHead className="w-2/12 text-xs sm:text-sm">
                                 Station
                               </TableHead>
-                              <TableHead className="w-3/12 p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableHead className="w-3/12 text-xs sm:text-sm">
                                 Activity Description
                               </TableHead>
                             </TableRow>
                           </TableHeader>
                           <TableBody>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 🚀 The AI Nexus
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Kids explore AI-generated stories, art, and
                                 chatbots. They will learn how AI assists in
                                 school, art, and daily life.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 🌐 Cybernaut City
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Internet safety and scam detection through
                                 interactive challenges.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 📸 Pixelopolis
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Kids learn basic video and photo editing.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 🎭 DreamLens Arcade
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Augmented Reality (AR) storytelling and
                                 mini-comic creation.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 🖌️ Creator's Cove
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Digital drawing on tablets to create futuristic
                                 inventions.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 🔨 CodeCrafter's Workshop
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Kids will be introduced to Scratch, where they
                                 will learn the basics of coding logic and create
                                 their own mini game.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 🎶 Soundwave Studio
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Kids experiment with digital music-making tools.
                               </TableCell>
                             </TableRow>
@@ -566,58 +566,58 @@ function ActivitiesPage() {
                         <Table className="w-full">
                           <TableHeader>
                             <TableRow>
-                              <TableHead className="w-2/12 p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableHead className="w-2/12 text-xs sm:text-sm">
                                 Role
                               </TableHead>
-                              <TableHead className="w-3/12 p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableHead className="w-3/12 text-xs sm:text-sm">
                                 Responsibilities
                               </TableHead>
                             </TableRow>
                           </TableHeader>
                           <TableBody>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Event Director/ Lead Coordinator
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Oversees event flow, makes real-time
                                 adjustments, ensures all teams are functioning
                                 smoothly
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Program Manager
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Ensures event follows the timeline, assists
                                 emcee, manages transitions
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Emcee/ Host
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Engages participants, introduces segments,
                                 maintains energy
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Station Masters (Day 2)
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Guide children through their assigned stations,
                                 ensure engagement and learning. In charge of
                                 setting up their own stations
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Computer Lab Repair Team (Day 2)
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 In collaboration with USLS ITS Office, and at
                                 most 2 volunteers from GDG-USLS, they will be in
                                 charge of setting up the computer lab,
@@ -627,28 +627,28 @@ function ActivitiesPage() {
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Photographers & Documentation
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Capture highlights of activities and
                                 interactions for reports and promotions
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Tech & Sound Team
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Manages microphones, speakers, and sound system.
                                 Will also man the Station 7.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Food & Logistics Team
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Responsible for buying food, running errands,
                                 and assisting the kitchen in preparing snacks
                                 and refreshments. Additionally, handles
@@ -708,38 +708,38 @@ function ActivitiesPage() {
                         <Table className="w-full">
                           <TableHeader>
                             <TableRow>
-                              <TableHead className="w-2/12 p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableHead className="w-2/12 text-xs sm:text-sm">
                                 Time
                               </TableHead>
-                              <TableHead className="w-3/12 p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableHead className="w-3/12 text-xs sm:text-sm">
                                 Activity
                               </TableHead>
                             </TableRow>
                           </TableHeader>
                           <TableBody>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 9:00 AM – 10:30 AM
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Departure from La Salle & Arrival at Kalipay
                                 Negrense Foundation
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 10:30 AM – 12:00 NN
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Computer Laboratory checking, venue assessment,
                                 station setup, and briefing
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 12:00 NN – 1:00 PM
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Lunch Break
                               </TableCell>
                             </TableRow>
@@ -762,58 +762,58 @@ function ActivitiesPage() {
                         <Table className="w-full">
                           <TableHeader>
                             <TableRow>
-                              <TableHead className="w-2/12 p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableHead className="w-2/12 text-xs sm:text-sm">
                                 Station
                               </TableHead>
-                              <TableHead className="w-3/12 p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableHead className="w-3/12 text-xs sm:text-sm">
                                 Activity Description
                               </TableHead>
                             </TableRow>
                           </TableHeader>
                           <TableBody>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 🏴‍☠️ Tech Treasure Hunt
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Kids solve tech-related riddles using QR codes
                                 and AR clues.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 🎮 Color Code: The Mystery Painting
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Solving riddles unlocks sections of a hidden
                                 image.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 {" "}
                                 ⚔️ Virtual Avatar Arena
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 A hidden volunteer controls a 3D model (VTuber),
                                 interacting with kids in real-time.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 {" "}
                                 🎁 Heart Rewards Station
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Kids exchange "heart" cards for small prizes and
                                 stickers.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 💻 Computer Lab: Smart Tech Habits
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Kids learn email management, online safety, and
                                 file organization.
                               </TableCell>
@@ -832,57 +832,57 @@ function ActivitiesPage() {
                         <Table className="w-full">
                           <TableHeader>
                             <TableRow>
-                              <TableHead className="w-2/12 p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableHead className="w-2/12 text-xs sm:text-sm">
                                 Role
                               </TableHead>
-                              <TableHead className="w-3/12 p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableHead className="w-3/12 text-xs sm:text-sm">
                                 Responsibilities
                               </TableHead>
                             </TableRow>
                           </TableHeader>
                           <TableBody>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Event Director/ Lead Coordinator
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Oversees event flow, makes real-time
                                 adjustments, ensures all teams are functioning
                                 smoothly
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Program Manager
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Ensures event follows the timeline, assists
                                 emcee, manages transitions
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Emcee/ Host
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Engages participants, introduces segments,
                                 maintains energy
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Station Masters (Day 3)
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Explain and oversee station tasks, enforce
                                 rules, distribute prizes.
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Computer Lab Team (Day 3)
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 In collaboration with CECS, and at most 2
                                 volunteers from GDG-USLS, they will take over
                                 the learning sessions in the computer
@@ -890,20 +890,20 @@ function ActivitiesPage() {
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 VTuber Operator
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Controls the virtual avatar from a different
                                 room and interacts with participants in real
                                 time
                               </TableCell>
                             </TableRow>
                             <TableRow>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 VTuber Setup Manager
                               </TableCell>
-                              <TableCell className="p-1 sm:p-2 text-xs sm:text-sm">
+                              <TableCell className="text-xs sm:text-sm">
                                 Manages camera, software, and environment for
                                 smooth execution. Setups the station.
                               </TableCell>
