@@ -36,9 +36,9 @@ function DonationDrivePage() {
   // Sample donation drive images - replace with actual images
   const donationDriveImages = [
     {
-      src: "/dd1.jpg?height=400&width=600",
-      alt: "Students donating school supplies",
-      caption: "USLS students bringing donations to the collection point",
+      src: "/dd5.jpg?height=400&width=600",
+      alt: "Donation Drive pubmat",
+      caption: "Donation drive publication material",
     },
     {
       src: "/dd2.jpg?height=400&width=600",
@@ -48,7 +48,7 @@ function DonationDrivePage() {
     {
       src: "/dd3.jpg?height=400&width=600",
       alt: "Arielle Jimera with donation boxes",
-      caption: "Chief Officer a organizing the donation boxes",
+      caption: "Chief Officer organizing the donation boxes",
     },
     {
       src: "/dd4.jpg?height=400&width=600",
@@ -57,9 +57,9 @@ function DonationDrivePage() {
         "Hygiene kits and school supplies collected for creative activities",
     },
     {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Tech equipment donations",
-      caption: "Technology equipment donated for computer lab repair",
+      src: "/dd1.jpg?height=400&width=600",
+      alt: "Students donating school supplies",
+      caption: "USLS students bringing donations to the collection point",
     },
   ];
 
@@ -77,10 +77,10 @@ function DonationDrivePage() {
           className="space-y-12"
         >
           <motion.div variants={itemVariants} className="text-center space-y-4">
-            <Badge className="mb-2 px-3 py-1 text-sm">
+            <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-gradient-to-r from-[#8E2DE2] to-[#4A00E0] text-white-foreground hover:bg-primary/80 mb-2">
               <Heart className="mr-1 h-3.5 w-3.5" />
               Initiative Led by Arielle Jimera
-            </Badge>
+            </div>
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
               Donation Drive
             </h1>
@@ -96,30 +96,27 @@ function DonationDrivePage() {
           >
             {donationDriveImages.map((image, index) => (
               <Card key={index}>
-                <CardContent className="flex flex-col items-center justify-center p-6">
+                <CardContent className="flex flex-col items-center justify-center">
                   <div className="overflow-hidden rounded-lg">
                     <img
                       src={image.src || "/placeholder.svg"}
                       alt={image.alt}
-                      className="h-[200px] w-full object-cover transition-all hover:scale-105"
+                      className="sm:h-[300px] h-full w-full object-cover transition-all hover:scale-105"
                     />
                   </div>
-                  <p className="mt-3 text-sm text-center text-muted-foreground">
+                  <p className="mt-3 text-sm text-center text-muted-foreground p-2">
                     {image.caption}
                   </p>
                 </CardContent>
               </Card>
             ))}
           </motion.div>
-          <motion.div
-            variants={itemVariants}
-            className="mx-auto max-w-[800px] space-y-4"
-          >
+          <motion.div variants={itemVariants} className="mx-auto max-w-[800px]">
             <h3 className="text-2xl font-bold text-center">
               Impact of Our Donation Drive
             </h3>
 
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-10">
               {/* Impact 1: Digital Access */}
               <div className="flex flex-col items-center text-center space-y-2">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
@@ -146,6 +143,42 @@ function DonationDrivePage() {
                   The donation of 45-47 digital drawing tablets provided
                   children with modern tools, fostering creativity and tech
                   literacy.
+                </p>
+              </div>
+
+              {/* Impact 6: Computer Lab */}
+              <div className="flex flex-col items-center text-center space-y-2">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                  <svg
+                    viewBox="0 0 24.00 24.00"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="#2563eb"
+                    stroke-width="0.00024000000000000003"
+                    className="h-6 w-6"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      {" "}
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2 6C2 4.34315 3.34315 3 5 3H19C20.6569 3 22 4.34315 22 6V15C22 16.6569 20.6569 18 19 18H13V19H15C15.5523 19 16 19.4477 16 20C16 20.5523 15.5523 21 15 21H9C8.44772 21 8 20.5523 8 20C8 19.4477 8.44772 19 9 19H11V18H5C3.34315 18 2 16.6569 2 15V6ZM5 5C4.44772 5 4 5.44772 4 6V15C4 15.5523 4.44772 16 5 16H19C19.5523 16 20 15.5523 20 15V6C20 5.44772 19.5523 5 19 5H5Z"
+                        fill="#2563eb"
+                      ></path>{" "}
+                    </g>
+                  </svg>
+                </div>
+                <h4 className="text-lg font-medium">Enhanced Computer Lab</h4>
+                <p className="text-sm text-muted-foreground">
+                  Repairs and software installations in the computer lab ensured
+                  children have reliable access to technology for learning and
+                  creativity.
                 </p>
               </div>
 
@@ -179,13 +212,14 @@ function DonationDrivePage() {
               <div className="flex flex-col items-center text-center space-y-2">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                   <svg
-                    fill="#000000"
+                    fill="#2563eb"
                     version="1.1"
                     id="Capa_1"
                     xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink"
                     viewBox="0 0 335.08 335.079"
                     xmlSpace="preserve"
+                    className="h-6 w-6 text-primary"
                   >
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g
@@ -270,7 +304,7 @@ function DonationDrivePage() {
               </div>
             </div>
 
-            <div className="mt-6 text-center">
+            <div className="mt-16 text-center">
               <p className="text-muted-foreground">
                 The donation drive was a tremendous success thanks to the
                 generosity of the USLS community and the leadership of Arielle
