@@ -17,7 +17,7 @@ function Header() {
         <Link to="/" className="flex items-center space-x-2">
           <span className="font-bold text-xl">Project Dagtaan</span>
         </Link>
-        <nav className="hidden md:flex gap-6">
+        <nav className="hidden lg:flex gap-6">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -92,14 +92,14 @@ function Header() {
         </nav>
         <Link
           to="/contact"
-          className="hidden md:inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-to-r from-[#8E2DE2] to-[#4A00E0] text-white-foreground hover:bg-primary/90 h-10 px-4 py-2"
+          className="hidden lg:inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-to-r from-[#8E2DE2] to-[#4A00E0] text-white-foreground hover:bg-primary/90 h-10 px-4 py-2"
         >
           Get Involved
           <ChevronRight className="ml-1 h-4 w-4" />
         </Link>
         <button
           onClick={toggleMenu}
-          className="md:hidden inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10"
+          className="lg:hidden inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10"
         >
           <span className="sr-only">Toggle menu</span>
           <svg
@@ -122,7 +122,7 @@ function Header() {
 
         {/* Mobile menu */}
         {isMenuOpen && (
-          <div className="absolute top-16 left-0 right-0 bg-background border-b md:hidden">
+          <div className="absolute top-16 left-0 right-0 h-screen bg-background border-b lg:hidden">
             <div className="container py-4 flex flex-col gap-4">
               <NavLink
                 to="/"
@@ -202,14 +202,6 @@ function Header() {
               >
                 Contact
               </NavLink>
-              <Link
-                to="/contact"
-                className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
-                onClick={toggleMenu}
-              >
-                Get Involved
-                <ChevronRight className="ml-1 h-4 w-4" />
-              </Link>
             </div>
           </div>
         )}
