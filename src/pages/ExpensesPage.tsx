@@ -9,14 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from "../components/ui/card";
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "../components/ui/tabs";
-import { Button } from "../components/ui/button";
-import { ExternalLink, FileSpreadsheet, Download } from "lucide-react";
+import { AlertCircle, Calendar } from "lucide-react";
 
 function ExpensesPage() {
   const [ref, inView] = useInView({
@@ -45,10 +38,6 @@ function ExpensesPage() {
     },
   };
 
-  // Replace with your actual Google Sheets URL
-  const googleSheetsUrl =
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vTol4vlAmcT13V1Ggu5ZPlnSWD428JKOtRthgEKqqujKLFSIBmhp6ftUY9eSAzDOUlm0wGQ3qgRAzeQ/pubhtml";
-
   return (
     <section
       id="expenses"
@@ -71,171 +60,80 @@ function ExpensesPage() {
               for Project Dagtaan.
             </p>
           </motion.div>
+
           <motion.div variants={itemVariants}>
-            <Card>
-              <CardHeader>
-                <CardTitle>Project Expenses</CardTitle>
-                <CardDescription>
-                  Live tracking of all expenses related to Project Dagtaan
-                  activities
+            <Card className="border-muted-foreground/20">
+              <CardHeader className="text-center">
+                <div className="flex justify-center mb-4">
+                  <AlertCircle className="h-12 w-12 text-amber-500" />
+                </div>
+                <CardTitle className="text-xl md:text-2xl">
+                  Expenses Information Currently Unavailable
+                </CardTitle>
+                <CardDescription className="text-base">
+                  We're currently updating our financial reporting system to
+                  provide you with more accurate and detailed information.
                 </CardDescription>
               </CardHeader>
-              <CardContent>
-                <Tabs defaultValue="overview" className="w-full">
-                  <TabsList className="grid w-full grid-cols-4">
-                    <TabsTrigger value="overview">Overview</TabsTrigger>
-                    <TabsTrigger value="day1">Day 1</TabsTrigger>
-                    <TabsTrigger value="day2">Day 2</TabsTrigger>
-                    <TabsTrigger value="day3">Day 3</TabsTrigger>
-                  </TabsList>
-                  <TabsContent value="overview" className="space-y-4">
-                    <div className="rounded-lg border p-4 mt-4">
-                      <div className="flex items-center gap-4 mb-4">
-                        <FileSpreadsheet className="h-8 w-8 text-primary" />
-                        <div>
-                          <h3 className="text-lg font-medium">
-                            Live Expense Tracking
-                          </h3>
-                          <p className="text-sm text-muted-foreground">
-                            This Google Sheet is updated in real-time as
-                            expenses occur
-                          </p>
-                        </div>
-                      </div>
-                      <div className="aspect-video w-full rounded-lg border bg-muted/50 mb-4">
-                        <iframe
-                          src={googleSheetsUrl.replace(
-                            "/edit?usp=sharing",
-                            "/pubhtml?widget=true&amp;headers=false"
-                          )}
-                          className="w-full h-full rounded-lg"
-                          title="Project Dagtaan Expenses"
-                        ></iframe>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <p className="text-sm text-muted-foreground">
-                          Last updated: March 5, 2025
-                        </p>
-                        <div className="flex gap-2">
-                          <Button variant="outline" size="sm" asChild>
-                            <a
-                              href={googleSheetsUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <ExternalLink className="mr-2 h-4 w-4" />
-                              Open in Google Sheets
-                            </a>
-                          </Button>
-                          <Button variant="outline" size="sm">
-                            <Download className="mr-2 h-4 w-4" />
-                            Download as PDF
-                          </Button>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="grid gap-4 md:grid-cols-3">
-                      <Card>
-                        <CardHeader className="pb-2">
-                          <CardTitle className="text-lg">
-                            Total Budget
-                          </CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                          <p className="text-2xl font-bold">₱21,620</p>
-                          <p className="text-xs text-muted-foreground">
-                            For all three days of activities
-                          </p>
-                        </CardContent>
-                      </Card>
-                      <Card>
-                        <CardHeader className="pb-2">
-                          <CardTitle className="text-lg">
-                            Expenses to Date
-                          </CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                          <p className="text-2xl font-bold">₱65,750</p>
-                          <p className="text-xs text-muted-foreground">
-                            43.8% of total budget
-                          </p>
-                        </CardContent>
-                      </Card>
-                      <Card>
-                        <CardHeader className="pb-2">
-                          <CardTitle className="text-lg">
-                            Remaining Funds
-                          </CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                          <p className="text-2xl font-bold">₱84,250</p>
-                          <p className="text-xs text-muted-foreground">
-                            56.2% of total budget
-                          </p>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </TabsContent>
-                  <TabsContent value="day1" className="space-y-4">
-                    <div className="rounded-lg border p-4 mt-4">
-                      <h3 className="text-lg font-medium mb-4">
-                        Day 1: Creative Exploration & Team Building
-                      </h3>
-                      <div className="aspect-video w-full rounded-lg border bg-muted/50">
-                        <iframe
-                          src={googleSheetsUrl.replace(
-                            "/edit?usp=sharing",
-                            "/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
-                          )}
-                          className="w-full h-full rounded-lg"
-                          title="Day 1 Expenses"
-                        ></iframe>
-                      </div>
-                    </div>
-                  </TabsContent>
-                  <TabsContent value="day2" className="space-y-4">
-                    <div className="rounded-lg border p-4 mt-4">
-                      <h3 className="text-lg font-medium mb-4">
-                        Day 2: Tech Seminars & Computer Lab Repair
-                      </h3>
-                      <div className="aspect-video w-full rounded-lg border bg-muted/50">
-                        <iframe
-                          src={googleSheetsUrl.replace(
-                            "/edit?usp=sharing",
-                            "/pubhtml?gid=1&amp;single=true&amp;widget=true&amp;headers=false"
-                          )}
-                          className="w-full h-full rounded-lg"
-                          title="Day 2 Expenses"
-                        ></iframe>
-                      </div>
-                    </div>
-                  </TabsContent>
-                  <TabsContent value="day3" className="space-y-4">
-                    <div className="rounded-lg border p-4 mt-4">
-                      <h3 className="text-lg font-medium mb-4">
-                        Day 3: Computer Lab Hands-On & Rewards System
-                      </h3>
-                      <div className="aspect-video w-full rounded-lg border bg-muted/50">
-                        <iframe
-                          src={googleSheetsUrl.replace(
-                            "/edit?usp=sharing",
-                            "/pubhtml?gid=2&amp;single=true&amp;widget=true&amp;headers=false"
-                          )}
-                          className="w-full h-full rounded-lg"
-                          title="Day 3 Expenses"
-                        ></iframe>
-                      </div>
-                    </div>
-                  </TabsContent>
-                </Tabs>
+              <CardContent className="space-y-6">
+                <div className="rounded-lg border border-muted-foreground/20 p-6 text-center">
+                  <p className="text-muted-foreground mb-4">
+                    Our team is working diligently to compile and verify all
+                    expense data related to Project Dagtaan activities. This
+                    ensures that we maintain our commitment to transparency and
+                    accountability.
+                  </p>
+
+                  <div className="flex items-center justify-center gap-2 text-primary">
+                    <Calendar className="h-5 w-5" />
+                    <p className="font-medium">
+                      Expected availability: April 15, 2025
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid gap-4 md:grid-cols-3">
+                  <Card className="bg-muted/50">
+                    <CardHeader className="pb-2">
+                      <CardTitle className="text-lg">Total Budget</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-2xl font-bold text-muted-foreground">
+                        Coming Soon
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card className="bg-muted/50">
+                    <CardHeader className="pb-2">
+                      <CardTitle className="text-lg">
+                        Expenses to Date
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-2xl font-bold text-muted-foreground">
+                        Coming Soon
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card className="bg-muted/50">
+                    <CardHeader className="pb-2">
+                      <CardTitle className="text-lg">Remaining Funds</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-2xl font-bold text-muted-foreground">
+                        Coming Soon
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
               </CardContent>
             </Card>
           </motion.div>
+
           <motion.div variants={itemVariants} className="text-center">
             <p className="text-muted-foreground">
-              For detailed financial reports or questions about our expenses,
-              please{" "}
-              <a href="#contact" className="text-primary hover:underline">
+              For questions about our expenses or financial transparency, please{" "}
+              <a href="/contact" className="text-primary hover:underline">
                 contact us
               </a>
               .
