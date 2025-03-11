@@ -233,11 +233,11 @@ function ActivitiesPage() {
                             </TableRow>
                             <TableRow>
                               <TableCell className="text-xs sm:text-sm">
-                                ITS Faculty Advisor
+                                ITS Staff
                               </TableCell>
                               <TableCell className="text-xs sm:text-sm">
-                                Provides expert guidance on technical
-                                requirements and educational technology needs
+                                Assists with technical repairs, maintenance, and
+                                educational technology needs
                               </TableCell>
                             </TableRow>
                             <TableRow>
@@ -1053,9 +1053,9 @@ function ActivitiesPage() {
                                 Computer Lab Team (Day 3)
                               </TableCell>
                               <TableCell className="text-xs sm:text-sm">
-                                In collaboration with CECS, and at most 2
-                                volunteers from GDG-USLS, they will take over
-                                the learning sessions in the computer
+                                In collaboration with CECS faculty members, and
+                                at most 2 volunteers from GDG-USLS, they will
+                                take over the learning sessions in the computer
                                 laboratory.
                               </TableCell>
                             </TableRow>
