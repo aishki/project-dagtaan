@@ -87,14 +87,175 @@ function ActivitiesPage() {
             </p>
           </motion.div>
           <motion.div variants={itemVariants}>
-            <Tabs defaultValue="day1" className="w-full">
+            <Tabs defaultValue="ocular" className="w-full">
               <div className="overflow-x-auto pb-2 px-4 sm:px-0">
-                <TabsList className="grid w-full min-w-[300px] grid-cols-3">
+                <TabsList className="grid w-full min-w-[300px] grid-cols-4">
+                  <TabsTrigger value="ocular">Ocular</TabsTrigger>
                   <TabsTrigger value="day1">Day 1</TabsTrigger>
                   <TabsTrigger value="day2">Day 2</TabsTrigger>
                   <TabsTrigger value="day3">Day 3</TabsTrigger>
                 </TabsList>
               </div>
+
+              <TabsContent value="ocular" className="mt-4 sm:mt-6">
+                <Card className="p-2 sm:p-3 rounded-none sm:rounded-lg">
+                  <CardHeader className="p-2 sm:p-4">
+                    <CardTitle className="text-lg sm:text-xl md:text-2xl">
+                      Ocular Visit & Minor Repairs
+                    </CardTitle>
+                    <CardDescription>
+                      Initial assessment and preparation for the full computer
+                      lab restoration
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-4 sm:space-y-6 p-2 sm:p-4">
+                    {/* Header Thing */}
+                    <div className="grid gap-2 sm:gap-4 grid-cols-1 sm:grid-cols-3">
+                      <div className="flex items-center gap-2">
+                        <Calendar className="h-4 w-4 sm:h-5 sm:w-5 text-primary flex-shrink-0" />
+                        <span className="text-xs sm:text-sm">
+                          March 15, 2025
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-primary flex-shrink-0" />
+                        <span className="text-xs sm:text-sm">
+                          12:30 PM - 5:00 PM
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-primary flex-shrink-0" />
+                        <span className="text-xs sm:text-sm">
+                          Kalipay Negrense Foundation
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Afternoon Program */}
+                    <div>
+                      <h4 className="text-base sm:text-lg font-medium mb-2 mt-6 sm:mt-10 w-full px-0">
+                        Afternoon Program
+                      </h4>
+
+                      <div className="overflow-x-auto -mx-2 sm:mx-0">
+                        <Table className="w-full">
+                          <TableHeader>
+                            <TableRow>
+                              <TableHead className="w-2/12 text-xs sm:text-sm">
+                                Time
+                              </TableHead>
+                              <TableHead className="w-3/12 text-xs sm:text-sm">
+                                Activity
+                              </TableHead>
+                            </TableRow>
+                          </TableHeader>
+                          <TableBody>
+                            <TableRow>
+                              <TableCell className="text-xs sm:text-sm">
+                                12:30 PM – 1:30 PM
+                              </TableCell>
+                              <TableCell className="text-xs sm:text-sm">
+                                Departure from La Salle & Arrival at Kalipay
+                                Negrense Foundation
+                              </TableCell>
+                            </TableRow>
+                            <TableRow>
+                              <TableCell className="text-xs sm:text-sm">
+                                1:30 PM – 5:00 PM
+                              </TableCell>
+                              <TableCell className="text-xs sm:text-sm">
+                                Ocular inspection and minor repairs in the
+                                computer lab
+                              </TableCell>
+                            </TableRow>
+                          </TableBody>
+                        </Table>
+                      </div>
+                    </div>
+
+                    {/* Activity Description */}
+                    <div>
+                      <h4 className="text-base sm:text-lg font-medium mb-2 mt-6 sm:mt-10 w-full px-0">
+                        Activity Description
+                      </h4>
+                      <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-300 mb-4">
+                        Initiated by the GDG-USLS, in collaboration with the ITS
+                        Office faculty of USLS, this visit aims to:
+                      </p>
+                      <ul className="list-disc pl-5 space-y-2 text-xs sm:text-sm text-gray-700 dark:text-gray-300">
+                        <li>
+                          Conduct a thorough ocular inspection of the computer
+                          lab facilities
+                        </li>
+                        <li>Perform minor repairs on existing equipment</li>
+                        <li>
+                          Assess the lab's current state and document
+                          requirements
+                        </li>
+                        <li>
+                          Prepare a detailed plan for the full restoration to be
+                          completed on subsequent visits
+                        </li>
+                        <li>
+                          Identify software and hardware needs for the
+                          educational programs
+                        </li>
+                      </ul>
+                    </div>
+
+                    {/* Roles & Responsibilities */}
+                    <div>
+                      <h4 className="text-base sm:text-lg font-medium mb-2 mt-6 sm:mt-10 w-full px-0">
+                        Roles & Responsibilities
+                      </h4>
+                      <div className="overflow-x-auto -mx-2 sm:mx-0">
+                        <Table className="w-full">
+                          <TableHeader>
+                            <TableRow>
+                              <TableHead className="w-2/12 text-xs sm:text-sm">
+                                Role
+                              </TableHead>
+                              <TableHead className="w-3/12 text-xs sm:text-sm">
+                                Responsibilities
+                              </TableHead>
+                            </TableRow>
+                          </TableHeader>
+                          <TableBody>
+                            <TableRow>
+                              <TableCell className="text-xs sm:text-sm">
+                                Technical Lead
+                              </TableCell>
+                              <TableCell className="text-xs sm:text-sm">
+                                Oversees the assessment process, identifies
+                                critical issues, and develops the restoration
+                                plan
+                              </TableCell>
+                            </TableRow>
+                            <TableRow>
+                              <TableCell className="text-xs sm:text-sm">
+                                ITS Faculty Advisor
+                              </TableCell>
+                              <TableCell className="text-xs sm:text-sm">
+                                Provides expert guidance on technical
+                                requirements and educational technology needs
+                              </TableCell>
+                            </TableRow>
+                            <TableRow>
+                              <TableCell className="text-xs sm:text-sm">
+                                Documentation Team
+                              </TableCell>
+                              <TableCell className="text-xs sm:text-sm">
+                                Records the current state of equipment, creates
+                                inventory lists, and documents repair needs
+                              </TableCell>
+                            </TableRow>
+                          </TableBody>
+                        </Table>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </TabsContent>
 
               <TabsContent value="day1" className="mt-4 sm:mt-6">
                 <Card className="p-2 sm:p-3 rounded-none sm:rounded-lg">
@@ -112,7 +273,7 @@ function ActivitiesPage() {
                       <div className="flex items-center gap-2">
                         <Calendar className="h-4 w-4 sm:h-5 sm:w-5 text-primary flex-shrink-0" />
                         <span className="text-xs sm:text-sm">
-                          March 15, 2025
+                          March 22, 2025
                         </span>
                       </div>
                       <div className="flex items-center gap-2">
@@ -162,8 +323,8 @@ function ActivitiesPage() {
                                 10:30 AM – 12:00 NN
                               </TableCell>
                               <TableCell className="text-xs sm:text-sm">
-                                Ocular Visit & Final Preparations (Venue
-                                assessment, station setup, and briefing)
+                                Final Preparations (Venue assessment, station
+                                setup, and briefing)
                               </TableCell>
                             </TableRow>
                             <TableRow>
@@ -392,11 +553,11 @@ function ActivitiesPage() {
                 <Card className="p-2 sm:p-3 rounded-none sm:rounded-lg">
                   <CardHeader className="p-2 sm:p-4">
                     <CardTitle className="text-lg sm:text-xl md:text-2xl">
-                      Day 2: Tech Seminars & Computer Lab Repair
+                      Day 2: Cyber World Tour: A Journey Through AI & Tech
                     </CardTitle>
                     <CardDescription>
-                      Focused on hands-on tech learning while repairing and
-                      optimizing Kalipay's computer lab
+                      Interactive technology stations with concurrent computer
+                      lab repairs
                     </CardDescription>
                   </CardHeader>
 
@@ -406,7 +567,7 @@ function ActivitiesPage() {
                       <div className="flex items-center gap-2">
                         <Calendar className="h-4 w-4 sm:h-5 sm:w-5 text-primary flex-shrink-0" />
                         <span className="text-xs sm:text-sm">
-                          March 22, 2025
+                          March 29, 2025
                         </span>
                       </div>
                       <div className="flex items-center gap-2">
@@ -627,10 +788,10 @@ function ActivitiesPage() {
                                 Computer Lab Repair Team (Day 2)
                               </TableCell>
                               <TableCell className="text-xs sm:text-sm">
-                                In collaboration with USLS ITS Office, and at
-                                most 2 volunteers from GDG-USLS, they will be in
-                                charge of setting up the computer lab,
-                                installing necessary software, and ensuring all
+                                Volunteers from GDG-USLS will be in charge of
+                                the complete repair and setup of Kalipay's
+                                computer lab, double checking the installation
+                                necessary software, tech runs and ensuring all
                                 computers are in working order for the
                                 activities on Day 3.
                               </TableCell>
@@ -690,7 +851,7 @@ function ActivitiesPage() {
                       <div className="flex items-center gap-2">
                         <Calendar className="h-4 w-4 sm:h-5 sm:w-5 text-primary flex-shrink-0" />
                         <span className="text-xs sm:text-sm">
-                          March 29, 2025
+                          April 5, 2025
                         </span>
                       </div>
                       <div className="flex items-center gap-2">
